@@ -7,25 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <img src="logo.png" alt="Logo" id="logo">
+    </header>
     <!-- Tableau Container -->
     <div class="tableau-container">
-        <div class='tableauPlaceholder' 
-                id='viz1725556784849' 
-                style='position: relative'>
-                <noscript><a href='#'><img alt='Attorney-Landlord Relationship ' 
-                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Clerk_of_Court_extracted-Tableau_Plaintiff&#47;Attorney-LandlordRelationship&#47;1_rss.png' 
-                    style='border: none' /></a>
-                </noscript>
-            <object class='tableauViz'  
-                style='display:none;'>
-                <param name='host_url' 
-                value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                <param name='embed_code_version' value='3' /> 
+        <div class='tableauPlaceholder' id='viz1725556784849'>
+            <noscript>
+                <a href='#'><img alt='Attorney-Landlord Relationship' src='https://public.tableau.com/static/images/Cl/Clerk_of_Court_extracted-Tableau_Plaintiff/Attorney-LandlordRelationship/1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz' width='100%' height='100%'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
                 <param name='site_root' value='' />
-                <param name='name' value='Clerk_of_Court_extracted-Tableau_Plaintiff&#47;Attorney-LandlordRelationship' />
+                <param name='name' value='Clerk_of_Court_extracted-Tableau_Plaintiff/Attorney-LandlordRelationship' />
                 <param name='tabs' value='no' />
                 <param name='toolbar' value='yes' />
-                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Clerk_of_Court_extracted-Tableau_Plaintiff&#47;Attorney-LandlordRelationship&#47;1.png' />
+                <param name='static_image' value='https://public.tableau.com/static/images/Cl/Clerk_of_Court_extracted-Tableau_Plaintiff/Attorney-LandlordRelationship/1.png' />
                 <param name='animate_transition' value='yes' />
                 <param name='display_static_image' value='yes' />
                 <param name='display_spinner' value='yes' />
@@ -35,14 +33,23 @@
                 <param name='filter' value='publish=yes' />
             </object>
         </div>                
-        <script type='text/javascript'>                    
-            var divElement = document.getElementById('viz1725556784849');
-            var vizElement = divElement.getElementsByTagName('object')[0];
-            vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-        </script>
     </div>
+    
+    <footer>
+        <h3>Visualization created by 2024 JALA DSSG Team using Clerk of Courts weekly eviction data</h3>
+    </footer>
+    
+    <!-- Tableau API Script -->
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1725556784849');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '100%';
+        vizElement.style.height = '100%'; // Set a fixed height for the visualization container
+
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
 </body>
 </html>
+

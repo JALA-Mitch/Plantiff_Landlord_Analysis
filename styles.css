@@ -1,17 +1,41 @@
 /* styles.css */
-body {
-    font-family: Arial, sans-serif;
+body, html {
+    height: 1200px;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5;
+    flex-direction: column;
+}
+
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    height: 40px;
+    align-content: center;
 }
 
 .tableau-container {
-    width: 80%;
-    height: 80vh; /* Makes the visualization take up most of the viewport */
-    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(1200px - 70px); /* Adjust based on header/footer height */
+}
+
+.tableauPlaceholder {
+    width: 100%; /* Adjust width as needed */
+    height: 100%;
+}
+
+footer {
+    background-color: #0077cc;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    height: 30px;
+}
+
+#logo {
+    height: 40px;
 }
